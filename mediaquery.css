@@ -1,0 +1,45 @@
+@media only screen and (max-width: 575px) {
+    
+    header {
+  
+        background-image: url('pic/phone\ _header_design-2.png');
+    height: 50%;
+    }
+
+    .page-title {
+        margin-top: 50px;
+        font-size: 1.15rem;
+        margin-bottom: 4px;
+        }
+    
+        .profile-background {
+            
+            background-image: url('/pic/profile-bg-phone.png'); /* replace with the URL of the background image */
+            
+          }
+
+          .hobby-grid {
+            /* para mag patong patong */
+            grid-template-columns: 1fr;
+          }
+    
+    /* footer media shesh last na */
+    footer {
+        padding: 30px 0;
+      }
+      
+      footer h4 {
+        font-size: 18px;
+        margin-bottom: 15px;
+      }
+    
+      footer ul.social-icons li {
+        margin-right: 5px;
+      }
+      
+      footer ul.contact-info li {
+        margin-right: 10px;
+        margin-bottom: 10px;
+      }
+    
+}

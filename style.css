@@ -1,0 +1,237 @@
+body {
+  background-color: #f2f2f2;
+  color: #333;
+  font-family: Arial, sans-serif;
+  text-align: center;
+  transition: background-color 0.3s ease;
+  margin: 0;
+  padding: 0;
+  }
+  header {
+    background-image: url('pic/header_design.png');
+    background-size: auto;
+    background-position: center center;
+    width: 100%;
+    height: 300px;
+    top: 0;
+    left: 0;
+    z-index: 9999;
+    background-repeat: repeat;
+  }
+  
+  header>.toggle-container>label i {
+    background-color: #333;
+    color: white;
+    padding: 5px;
+    border-radius: 5px;
+  }
+  
+  header>.toggle-container>label i:hover {
+    cursor: pointer;
+    background-color: black;
+    color: white;
+  }
+  
+  .page-title {
+    font-size: 3rem;
+    position: relative;
+    display: inline-block;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    white-space: nowrap;
+    margin: 0 auto;
+    letter-spacing: .15em;
+    animation: typing 3.5s steps(40, end), blink-caret .75s step-end infinite;
+  }
+  
+  /* keyframes para sa animation */
+  @keyframes typing {
+    from {
+      width: 0
+    }
+  
+    to {
+      width: 100%
+    }
+  }
+  
+  /* keyframes para sa blinking cursor */
+  @keyframes blink-caret {
+    from, to {
+      border-color: transparent
+    }
+    50% {
+      border-color: orange;
+    }
+  }
+  
+  /* tago yung overflow text after mag animate*/
+  .page-title:after {
+    content: "";
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: .15em;
+    height: 100%;
+    background-color: white;
+  }
+  /* end ng animation sa title */
+  
+  
+  /* audio button */
+  .audio-player {
+  margin-top: 50px;
+  }
+  
+  .audio-player button {
+  margin-top: 20px;
+  padding: 10px 20px;
+  background-color: #333;
+  color: #fff;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 1rem;
+  }
+  
+  .audio-player button:hover {
+  background-color: #555;
+  }
+
+  /* profile */
+  
+.profile-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative; 
+}
+
+.profile-background {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-image: url('pic/profile-bg.png'); 
+  background-size: cover;
+  background-repeat: no-repeat;
+  opacity: 0.5; /* para readable yung text */
+  z-index: -1; 
+}
+
+.profile-image {
+  width: 300px;
+  height: 300px;
+  object-fit: cover;
+  border-radius: 50%;
+  margin-bottom: 20px;
+}
+
+.profile-text {
+  max-width: 600px;
+  font-size: 1.3rem;
+  line-height: 1.1;
+  text-align: justify;
+  padding: 0 1rem;
+}
+
+/* hobby */
+.hobby-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  grid-gap: 20px;
+}
+
+.hobby-box {
+  background-color: #f9f9f9;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  padding: 20px;
+  text-align: center;
+}
+
+.hobby-box img {
+  max-width: 100%;
+}
+
+.hobby-box h3 {
+  margin-top: 0;
+}
+
+/* end ng hobby */
+
+/* footer saka contact infos */
+
+footer {
+  background-color: #222222;
+  color: #ffffff;
+  padding: 50px 0;
+}
+
+footer h4 {
+  font-size: 20px;
+  margin-bottom: 20px;
+}
+
+footer ul.social-icons {
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+footer ul.social-icons li {
+  display: inline-block;
+  margin-right: 10px;
+}
+
+footer ul.social-icons li:last-child {
+  margin-right: 0;
+}
+
+footer ul.social-icons a {
+  display: inline-block;
+  color: #ffffff;
+  background-color: #333333;
+  line-height: 40px;
+  width: 40px;
+  height: 40px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+footer ul.social-icons a:hover {
+  color: #ffffff;
+  background-color: #222222;
+}
+
+footer ul.contact-info {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+footer ul.contact-info li {
+  display: inline-block;
+  margin-right: 20px;
+}
+
+footer ul.contact-info li:last-child {
+  margin-right: 0;
+}
+
+footer ul.contact-info i {
+  color: #f4bc42;
+  margin-right: 10px;
+}
+
+footer ul.contact-info a {
+  color: #ffffff;
+  text-decoration: none;
+}
+
+footer ul.contact-info a:hover {
+  color: #f4bc42;
+}
+
+

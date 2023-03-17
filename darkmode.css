@@ -1,0 +1,72 @@
+/* dark mode */
+body.dark-mode {
+    background-color: #333;
+    color: #fff;
+    }
+  
+    body.dark-mode .audio-player button{
+      color: black;
+      background-color: white;
+    }
+  
+    body.dark-mode header>.toggle-container>label i {
+      color: black;
+      background-color: white;
+    }
+  
+    body.dark-mode header>.toggle-container>label i:hover{
+     cursor: pointer;
+     background-color: black;
+     color: white;
+    }
+  
+    /* toggle sa dark mode */
+    .toggle-container {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 20px;
+        }
+        
+        .toggle-container label {
+        margin-right: 10px;
+        }
+        
+        .toggle-container input[type="checkbox"] {
+        display: none;
+        }
+        
+        .toggle-container input[type="checkbox"] + .toggle-track {
+        background-color: #555;
+        border-radius: 20px;
+        cursor: pointer;
+        height: 10px;
+        transition: background-color 0.3s ease;
+        width: 30px;
+        }
+        
+        .toggle-container input[type="checkbox"]:checked + .toggle-track {
+        background-color: #333;
+        }
+        
+        .toggle-container input[type="checkbox"] + .toggle-track:before {
+        background-color: #fff;
+        border-radius: 50%;
+        content: "";
+        height: 18px;
+        left: -4px;
+        position: relative;
+        top: -4px;
+        transition: transform 0.5s ease;
+        width: 18px;
+        }
+        
+        .toggle-container input[type="checkbox"]:checked + .toggle-track:before {
+        transform: translateX(20px);
+        }
+
+        /* hobby box dark mode */
+        body.dark-mode .hobby-box{
+          background-color: #555;
+        }
+        /* end ng hobby box dark mode */
